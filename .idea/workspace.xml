@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="contact: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="contact_type: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="resume: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zub4DmmTOFTgz0azZjr4LA9Jbp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="daolayer.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="daolayer.query" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IntegrationTest.select2">
+    <configuration name="WherePredicateBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="daolayer.query.WherePredicateBuilder" />
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daolayer.query.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.select2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="select2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IntegrationTest.select2" />
+        <item itemvalue="JUnit.IntegrationTest.select" />
+        <item itemvalue="Application.WherePredicateBuilder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="" />
+      <created>1585691732126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585691732126</updated>
+      <workItem from="1585691736578" duration="1749000" />
+      <workItem from="1585731808264" duration="14430000" />
+      <workItem from="1585750730086" duration="435000" />
+      <workItem from="1585752521040" duration="4547000" />
+      <workItem from="1585770416382" duration="4260000" />
+      <workItem from="1585820231803" duration="435000" />
+      <workItem from="1585821003933" duration="2349000" />
+      <workItem from="1585832639276" duration="9765000" />
+      <workItem from="1585843900403" duration="5094000" />
+      <workItem from="1585854688986" duration="352000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="311" y="58" width="847" height="677" key="#Project_Structure" timestamp="1585735884901">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="847" height="677" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1585735884901" />
+    <state x="311" y="58" width="800" height="677" key="#SQL_Dialects" timestamp="1585834396410">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#SQL_Dialects/67.27.1299.741@67.27.1299.741" timestamp="1585834396410" />
+    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585839240764">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839240764" />
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585845077703">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585845077703" />
+    <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585833546100">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/67.27.1299.741@67.27.1299.741" timestamp="1585833546100" />
+    <state x="469" y="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585833535697">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="469" y="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/67.27.1299.741@67.27.1299.741" timestamp="1585833535697" />
+    <state x="451" y="27" width="510" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585854833361">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="451" y="27" width="510" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1585854833361" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585843922428">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1585843922428" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585833612357">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585833612357" />
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585842407750">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585842407750" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1585842407749">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1585842407749">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1585842407749">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
+    <state width="1253" height="202" key="GridCell.Tab.1.bottom" timestamp="1585842407743">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="202" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585842407743" />
+    <state width="1253" height="202" key="GridCell.Tab.1.center" timestamp="1585842407742">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="202" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1585842407742" />
+    <state width="1253" height="202" key="GridCell.Tab.1.left" timestamp="1585842407742">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="202" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1585842407742" />
+    <state width="1253" height="202" key="GridCell.Tab.1.right" timestamp="1585842407743">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="202" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1585842407743" />
+    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1585841015073">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1299.741@67.27.1299.741" timestamp="1585841015073" />
+    <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585839228679">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839228679" />
+  </component>
+</project>
