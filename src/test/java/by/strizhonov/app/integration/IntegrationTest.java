@@ -1,4 +1,4 @@
-package integration;
+package by.strizhonov.app.integration;
 
 import by.strizhonov.app.daolayer.model.Column;
 import by.strizhonov.app.daolayer.model.Resume;
