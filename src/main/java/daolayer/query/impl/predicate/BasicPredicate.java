@@ -1,15 +1,19 @@
-package daolayer.query.impl;
+package daolayer.query.impl.predicate;
 
-import daolayer.query.BinaryPredicate;
 import util.StringWrapper;
 
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
-public class BasicPredicate extends AbstractPredicate implements BinaryPredicate<String, String> {
+public class BasicPredicate<T> extends AbstractPredicate<T> {
+
 
     private final String leftSide;
     private final String rightSide;
     private final ComparisonOperator operator;
+
 
     public BasicPredicate(final String leftSide, final String rightSide, final ComparisonOperator operator) {
         this.leftSide = Objects.requireNonNull(leftSide);
@@ -17,25 +21,13 @@ public class BasicPredicate extends AbstractPredicate implements BinaryPredicate
         this.operator = Objects.requireNonNull(operator);
     }
 
-    @Override
-    public String getLeftHandSide() {
-        return leftSide;
-    }
 
     @Override
-    public String getRightHandSide() {
-        return rightSide;
+    public Set<PredicateParam> getParameters() {
+        return new HashSet<>(Collections.singletonList(
+                new PredicateParam(leftSide, operator, rightSide)));
     }
 
-    @Override
-    public ComparisonOperator getOperator() {
-        return operator;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
 
     @Override
     public String toString() {
@@ -43,5 +35,6 @@ public class BasicPredicate extends AbstractPredicate implements BinaryPredicate
                 operator.getValue() +
                 StringWrapper.wrapWithSingleQuotation(rightSide);
     }
+
 
 }

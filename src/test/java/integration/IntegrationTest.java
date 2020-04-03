@@ -1,9 +1,9 @@
 package integration;
 
 import daolayer.model.Resume;
-import daolayer.query.SelectQueryBuilder;
+import daolayer.query.impls.SelectQueryBuilder;
 import daolayer.query.Predicate;
-import daolayer.query.WherePredicateBuilder;
+import daolayer.query.impls.WherePredicateBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;

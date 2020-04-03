@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="" />
+    <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/SelectQueryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/ContactType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/ContactValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Technology.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/BinaryPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/Predicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/SelectQueryBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/WherePredicateBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/WherePredicateBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/AbstractPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/AbstractPredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/BasicPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/BasicPredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/BooleanOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/BooleanOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/ComparisonOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/ComparisonOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/CompoundPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/CompoundPredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/EmptyPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/EmptyPredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,11 +104,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="AnnotationType" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -96,6 +121,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Zub4DmmTOFTgz0azZjr4LA9Jbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -104,6 +130,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -119,9 +146,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/daolayer/query/implementation" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="daolayer.query.impls" />
       <recent name="daolayer.model" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -130,11 +159,11 @@
   </component>
   <component name="RunManager" selected="JUnit.IntegrationTest.select2">
     <configuration name="WherePredicateBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="daolayer.query.WherePredicateBuilder" />
+      <option name="MAIN_CLASS_NAME" value="daolayer.query.impls.WherePredicateBuilder" />
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daolayer.query.*" />
+          <option name="PATTERN" value="daolayer.query.impls.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,7 +230,10 @@
       <workItem from="1585821003933" duration="2349000" />
       <workItem from="1585832639276" duration="9765000" />
       <workItem from="1585843900403" duration="5094000" />
-      <workItem from="1585854688986" duration="352000" />
+      <workItem from="1585854688986" duration="2252000" />
+      <workItem from="1585857163947" duration="10350000" />
+      <workItem from="1585913962061" duration="7159000" />
+      <workItem from="1585921672616" duration="342000" />
     </task>
     <servers />
   </component>
@@ -221,10 +253,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839240764" />
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585845077703">
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585918923282">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585845077703" />
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585918923281" />
     <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585833546100">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -237,14 +269,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="451" y="27" width="510" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1585854833361" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585843922428">
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585914947688">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1585843922428" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585833612357">
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1585914947688" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585921124297">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585833612357" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585921124297" />
     <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585842407750">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -285,5 +317,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839228679" />
+    <state x="67" y="100" width="1289" height="592" key="new project wizard" timestamp="1585921112330">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="100" width="1289" height="592" key="new project wizard/67.27.1299.741@67.27.1299.741" timestamp="1585921112330" />
   </component>
 </project>

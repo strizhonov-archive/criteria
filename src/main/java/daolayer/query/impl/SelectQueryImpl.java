@@ -1,47 +1,64 @@
 package daolayer.query.impl;
 
-import daolayer.query.SelectQuery;
+import daolayer.model.Table;
 import daolayer.query.Predicate;
+import daolayer.query.SelectQuery;
 
 import java.util.Objects;
+import java.util.Set;
 
-public class SelectQueryImpl implements SelectQuery {
+public class SelectQueryImpl<T> implements SelectQuery<T> {
 
     private static final String SELECT_ALL_FROM_KEY_WORDS = "SELECT * FROM ";
     private static final String WHERE_KEY_WORD = " WHERE ";
     private static final String EMPTY = "";
-    private Predicate predicate;
+    private final Class<T> classType;
+    private Predicate<T> restriction;
     private String tableName;
     private String wherePlaceholder;
 
-    public SelectQueryImpl() {
+
+    public SelectQueryImpl(final Class<T> classType) {
+        this.classType = classType;
         this.wherePlaceholder = EMPTY;
+        setTableName();
     }
 
-    @Override
-    public void setTableName(final String tableName) {
-        this.tableName = Objects.requireNonNull(tableName);
-    }
 
     @Override
-    public void setPredicate(final Predicate predicate) {
-        this.predicate = Objects.requireNonNull(predicate);
-        if (!predicate.isEmpty()) {
-            wherePlaceholder = WHERE_KEY_WORD;
-        }
+    public SelectQuery<T> where(final Predicate<T> restriction) {
+        wherePlaceholder = WHERE_KEY_WORD;
+        this.restriction = Objects.requireNonNull(restriction);
+        return this;
     }
 
+
     @Override
-    public Predicate getPredicate() {
-        return predicate;
+    public Set<?> getParameters() {
+        return restriction.getParameters();
     }
+
 
     @Override
     public String toString() {
         return SELECT_ALL_FROM_KEY_WORDS +
                 tableName +
                 wherePlaceholder +
-                predicate.toString();
+                restriction.toString();
+    }
+
+
+    /**
+     * Retrieve table name from <code>@Table</code> annotation. Returns class name, if
+     * annotation is absent.
+     *
+     * @see Table
+     */
+    private void setTableName() {
+        Table table = classType.getAnnotation(Table.class);
+        this.tableName = table == null
+                ? classType.getSimpleName().toLowerCase()
+                : table.name();
     }
 
 

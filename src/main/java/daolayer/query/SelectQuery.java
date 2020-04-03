@@ -1,11 +1,10 @@
 package daolayer.query;
 
-public interface SelectQuery {
+import java.util.Set;
 
-    void setTableName(String tableName);
+public interface SelectQuery<T> {
 
-    void setPredicate(Predicate predicate);
+    SelectQuery<T> where(Predicate<T> restriction);
 
-    Predicate getPredicate();
-
+    Set<?> getParameters();
 }

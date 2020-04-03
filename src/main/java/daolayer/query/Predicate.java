@@ -1,31 +1,13 @@
 package daolayer.query;
 
-/**
- * Root interface for Objected-oriented SQL where-clause analog.
- */
-public interface Predicate {
+import java.util.Set;
 
-    /**
-     * Check whether predicate contains any restrictions or not.
-     *
-     * @return boolean check result.
-     */
-    boolean isEmpty();
+public interface Predicate<T> {
 
-    /**
-     * Compound current and passed predicates with AND logic
-     *
-     * @param predicate to add
-     * @return compounded predicate
-     */
-    Predicate and(Predicate predicate);
+    Predicate<T> or(Predicate<T> other);
 
-    /**
-     *  Compound current and passed predicates with OR logic
-     *
-     * @param predicate to add
-     * @return compounded predicate
-     */
-    Predicate or(Predicate predicate);
+    Predicate<T> and(Predicate<T> other);
+
+    Set<?> getParameters();
 
 }

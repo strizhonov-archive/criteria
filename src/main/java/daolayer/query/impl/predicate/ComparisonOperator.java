@@ -1,4 +1,4 @@
-package daolayer.query.impl;
+package daolayer.query.impl.predicate;
 
 public enum ComparisonOperator {
     LIKE(" LIKE "),
@@ -11,6 +11,11 @@ public enum ComparisonOperator {
     }
 
     public String getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
         return value;
     }
 }
