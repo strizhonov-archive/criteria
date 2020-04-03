@@ -46,16 +46,17 @@ public class IntegrationTest {
     public void aShouldSelectResumesByNameAnSurnameAndSecondName() throws SQLException {
         String sql = createATestQuery();
         List<Resume> foundResumes = getResumesFromQuery(sql);
-        Assert.assertEquals(1, foundResumes.size());
 
-        Resume found = foundResumes.get(0);
-        Assert.assertEquals("Мария", found.getName());
-        Assert.assertEquals("Морская", found.getSurname());
-        Assert.assertEquals("Васильевна", found.getSecondName());
-        Assert.assertEquals("female", found.getGender());
+        Resume expected = new Resume(3,
+                "Мария",
+                "Морская",
+                "Васильевна",
+                new GregorianCalendar(1999, Calendar.JULY, 11).getTime(),
+                "female",
+                new HashSet<>(),
+                new HashSet<>());
 
-        java.util.Date expectedBirthday = new GregorianCalendar(1999, Calendar.JULY, 11).getTime();
-        Assert.assertEquals(expectedBirthday, found.getBirthday());
+        Assert.assertTrue(foundResumes.contains(expected));
 
     }
 
@@ -64,6 +65,39 @@ public class IntegrationTest {
     public void bShouldSelectResumesBySurnamePatternOrGender() throws SQLException {
         String sql = createBTestQuery();
         List<Resume> foundResumes = getResumesFromQuery(sql);
+
+        Resume expected = new Resume(1,
+                "Петр",
+                "Петров",
+                "Петрович",
+                new GregorianCalendar(1986, Calendar.DECEMBER, 12).getTime(),
+                "male",
+                new HashSet<>(),
+                new HashSet<>());
+
+        Assert.assertTrue(foundResumes.contains(expected));
+
+        expected = new Resume(2,
+                "Иван",
+                "Иванов",
+                "Иванович",
+                new GregorianCalendar(1997, Calendar.APRIL, 4).getTime(),
+                "male",
+                new HashSet<>(),
+                new HashSet<>());
+
+        Assert.assertTrue(foundResumes.contains(expected));
+
+        expected = new Resume(3,
+                "Мария",
+                "Морская",
+                "Васильевна",
+                new GregorianCalendar(1999, Calendar.JULY, 11).getTime(),
+                "female",
+                new HashSet<>(),
+                new HashSet<>());
+
+        Assert.assertTrue(foundResumes.contains(expected));
     }
 
 

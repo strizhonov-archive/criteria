@@ -3,27 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Resume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/model/Resume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/BinaryWherePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQueryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicateBuilder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicateBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/AbstractWherePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/BasicPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/BooleanOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/ComparisonOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/CompoundWherePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/EmptyWherePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/integration/IntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/integration/IntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +120,7 @@
       <recent name="daolayer.query" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName">
+  <component name="RunManager" selected="JUnit.IntegrationTest.bShouldSelectResumesBySurnamePatternOrGender">
     <configuration name="IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="criteria" />
       <extension name="coverage">
@@ -157,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.bShouldSelectResumesBySurnamePatternOrGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="integration" />
       <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
-      <option name="METHOD_NAME" value="select" />
+      <option name="METHOD_NAME" value="bShouldSelectResumesBySurnamePatternOrGender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest.bShouldSelectResumesBySurnamePatternOrGender" />
         <item itemvalue="JUnit.IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName" />
         <item itemvalue="JUnit.IntegrationTest.shouldSelectResumesBySurnamePatternOrGender" />
         <item itemvalue="JUnit.IntegrationTest.shouldSelectResumesByNameAnSurnameAndSecondName" />
         <item itemvalue="JUnit.IntegrationTest.select2" />
-        <item itemvalue="JUnit.IntegrationTest.select" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +233,7 @@
       <workItem from="1585854688986" duration="2252000" />
       <workItem from="1585857163947" duration="10350000" />
       <workItem from="1585913962061" duration="7159000" />
-      <workItem from="1585921672616" duration="4367000" />
+      <workItem from="1585921672616" duration="4632000" />
     </task>
     <servers />
   </component>
@@ -297,22 +277,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585921124297" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585925782720">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585926309932">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585925782720" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1585925782719">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585926309932" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1585926309931">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585925782719" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1585925782718">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585926309931" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1585926309931">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585925782718" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1585925782719">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585926309931" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1585926309932">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585925782719" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585926309932" />
     <state width="1253" height="202" key="GridCell.Tab.1.bottom" timestamp="1585924379653">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
