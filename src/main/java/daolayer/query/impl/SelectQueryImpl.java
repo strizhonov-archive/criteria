@@ -21,15 +21,14 @@ public class SelectQueryImpl<T> implements SelectQuery<T> {
     public SelectQueryImpl(final Class<T> classType) {
         this.classType = classType;
         this.wherePlaceholder = EMPTY;
-        setTableName();
+        extractTableName();
     }
 
 
     @Override
-    public SelectQuery<T> where(final Predicate<T> restriction) {
+    public void where(final Predicate<T> restriction) {
         wherePlaceholder = WHERE_KEY_WORD;
         this.restriction = Objects.requireNonNull(restriction);
-        return this;
     }
 
 
@@ -54,7 +53,7 @@ public class SelectQueryImpl<T> implements SelectQuery<T> {
      *
      * @see Table
      */
-    private void setTableName() {
+    private void extractTableName() {
         Table table = classType.getAnnotation(Table.class);
         this.tableName = table == null
                 ? classType.getSimpleName().toLowerCase()

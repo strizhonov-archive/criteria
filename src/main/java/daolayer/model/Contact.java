@@ -8,8 +8,10 @@ public class Contact implements Serializable {
 
     private static final long serialVersionUID = 4L;
 
+    @Column(name = "id")
     private long id;
 
+    @Column(name = "type")
     private String type;
 
     @Column(name = "value")

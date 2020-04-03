@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/SelectQueryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/ContactType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/ContactValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Technology.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/BinaryPredicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/Predicate.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/SelectQueryBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/WherePredicateBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/WherePredicateBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/AbstractPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/AbstractPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/BasicPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/BasicPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/BooleanOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/BooleanOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/ComparisonOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/ComparisonOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/CompoundPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/CompoundPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/EmptyPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impls/EmptyPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Resume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/model/Resume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/BinaryWherePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQueryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicateBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/WherePredicateBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/AbstractWherePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/BasicPredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/BooleanOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/ComparisonOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/CompoundWherePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/EmptyWherePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/integration/IntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/integration/IntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,24 +71,6 @@
         <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="contact: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="resume_db@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="resume_db: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="contact_type: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -157,16 +140,19 @@
       <recent name="daolayer.query" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest.select2">
-    <configuration name="WherePredicateBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="daolayer.query.impls.WherePredicateBuilder" />
+  <component name="RunManager" selected="JUnit.IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName">
+    <configuration name="IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daolayer.query.impls.*" />
+          <option name="PATTERN" value="integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="aShouldSelectResumesByNameAnSurnameAndSecondName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,11 +189,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegrationTest.shouldSelectResumesByNameAnSurnameAndSecondName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="shouldSelectResumesByNameAnSurnameAndSecondName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.shouldSelectResumesBySurnamePatternOrGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="shouldSelectResumesBySurnamePatternOrGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest.aShouldSelectResumesByNameAnSurnameAndSecondName" />
+        <item itemvalue="JUnit.IntegrationTest.shouldSelectResumesBySurnamePatternOrGender" />
+        <item itemvalue="JUnit.IntegrationTest.shouldSelectResumesByNameAnSurnameAndSecondName" />
         <item itemvalue="JUnit.IntegrationTest.select2" />
         <item itemvalue="JUnit.IntegrationTest.select" />
-        <item itemvalue="Application.WherePredicateBuilder" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +253,7 @@
       <workItem from="1585854688986" duration="2252000" />
       <workItem from="1585857163947" duration="10350000" />
       <workItem from="1585913962061" duration="7159000" />
-      <workItem from="1585921672616" duration="342000" />
+      <workItem from="1585921672616" duration="4367000" />
     </task>
     <servers />
   </component>
@@ -253,10 +273,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839240764" />
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585918923282">
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585922532479">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585918923281" />
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585922532479" />
     <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585833546100">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -269,50 +289,50 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="451" y="27" width="510" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1585854833361" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585914947688">
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585922830556">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1585914947688" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1585922830556" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585921124297">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585921124297" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585842407750">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1585925782720">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585842407750" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1585842407749">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585925782720" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1585925782719">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1585842407749">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585925782719" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1585925782718">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1585842407749">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585925782718" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1585925782719">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585842407749" />
-    <state width="1253" height="202" key="GridCell.Tab.1.bottom" timestamp="1585842407743">
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585925782719" />
+    <state width="1253" height="202" key="GridCell.Tab.1.bottom" timestamp="1585924379653">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="202" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585842407743" />
-    <state width="1253" height="202" key="GridCell.Tab.1.center" timestamp="1585842407742">
+    <state width="1253" height="202" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585924379653" />
+    <state width="1253" height="202" key="GridCell.Tab.1.center" timestamp="1585924379652">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="202" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1585842407742" />
-    <state width="1253" height="202" key="GridCell.Tab.1.left" timestamp="1585842407742">
+    <state width="1253" height="202" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1585924379652" />
+    <state width="1253" height="202" key="GridCell.Tab.1.left" timestamp="1585924379652">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="202" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1585842407742" />
-    <state width="1253" height="202" key="GridCell.Tab.1.right" timestamp="1585842407743">
+    <state width="1253" height="202" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1585924379652" />
+    <state width="1253" height="202" key="GridCell.Tab.1.right" timestamp="1585924379653">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="202" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1585842407743" />
-    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1585841015073">
+    <state width="1253" height="202" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1585924379653" />
+    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1585924167650">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1299.741@67.27.1299.741" timestamp="1585841015073" />
+    <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1299.741@67.27.1299.741" timestamp="1585924167650" />
     <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585839228679">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

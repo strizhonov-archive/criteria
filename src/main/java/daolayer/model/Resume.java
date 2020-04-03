@@ -2,6 +2,7 @@ package daolayer.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -10,10 +11,8 @@ public class Resume implements Serializable {
 
     private static final long serialVersionUID = 4L;
 
+    @Column(name = "id")
     private long id;
-
-    @Column(name = "type")
-    private String type;
 
     @Column(name = "name")
     private String name;
@@ -30,18 +29,17 @@ public class Resume implements Serializable {
     @Column(name = "gender")
     private String gender;
 
-    private Set<Contact> contacts;
+    private Set<Contact> contacts = new HashSet<>();
 
-    private Set<String> technologies;
+    private Set<String> technologies = new HashSet<>();
 
     public Resume() {
         // Empty bean constructor
     }
 
-    public Resume(final long id, final String type, final String name, final String surname, final String secondName,
+    public Resume(final long id, final String name, final String surname, final String secondName,
                   final Date birthday, final String gender, final Set<Contact> contacts, final Set<String> technologies) {
         this.id = id;
-        this.type = type;
         this.name = name;
         this.surname = surname;
         this.secondName = secondName;
@@ -57,14 +55,6 @@ public class Resume implements Serializable {
 
     public void setId(final long id) {
         this.id = id;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(final String type) {
-        this.type = type;
     }
 
     public String getName() {
@@ -129,7 +119,6 @@ public class Resume implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         final Resume resume = (Resume) o;
         return id == resume.id &&
-                Objects.equals(type, resume.type) &&
                 Objects.equals(name, resume.name) &&
                 Objects.equals(surname, resume.surname) &&
                 Objects.equals(secondName, resume.secondName) &&
@@ -141,14 +130,13 @@ public class Resume implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, type, name, surname, secondName, birthday, gender, contacts, technologies);
+        return Objects.hash(id, name, surname, secondName, birthday, gender, contacts, technologies);
     }
 
     @Override
     public String toString() {
         return "Resume{" +
                 "id=" + id +
-                ", type='" + type + '\'' +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", secondName='" + secondName + '\'' +

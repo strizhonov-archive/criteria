@@ -18,7 +18,7 @@ public class SelectQueryBuilder<T> {
 
 
     public SelectQueryBuilder<T> where(Predicate<T> predicate) {
-        resultQuery = resultQuery.where(predicate);
+        resultQuery.where(predicate);
         return this;
     }
 
