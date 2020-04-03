@@ -20,22 +20,6 @@ public class SelectQueryImplTest {
     }
 
 
-    @Test
-    public void shouldSetAndGetTwoSetParameters() {
-        Predicate<TestEntity> firstChild
-                = new BasicPredicate<>("int_field", "TEST_VALUE", ComparisonOperator.EQUALS);
-        Predicate<TestEntity> secondChild
-                = new BasicPredicate<>("stringTestField", "TEST_VALUE", ComparisonOperator.LIKE);
-        Predicate<TestEntity> result
-                = new CompositePredicate<>(BooleanOperator.AND, firstChild, secondChild);
-
-        SelectQueryImpl<TestEntity> itemToTest = new SelectQueryImpl<>(TestEntity.class);
-        itemToTest.where(result);
-
-        Assert.assertEquals(2, itemToTest.getParameters().size());
-    }
-
-
     @Test(expected = NullPointerException.class)
     public void shouldThrowNullPointerAfterSettingNullPredicate() {
         SelectQueryImpl<TestEntity> itemToTest = new SelectQueryImpl<>(TestEntity.class);

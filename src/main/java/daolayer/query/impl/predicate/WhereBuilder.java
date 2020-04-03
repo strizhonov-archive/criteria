@@ -2,6 +2,7 @@ package daolayer.query.impl.predicate;
 
 import daolayer.model.Column;
 import daolayer.query.Predicate;
+import daolayer.query.impl.ColumnCanNotBeFoundException;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

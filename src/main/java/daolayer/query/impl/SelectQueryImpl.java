@@ -4,9 +4,7 @@ import daolayer.model.Table;
 import daolayer.query.Predicate;
 import daolayer.query.SelectQuery;
 
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 public class SelectQueryImpl<T> implements SelectQuery<T> {
 
@@ -30,14 +28,6 @@ public class SelectQueryImpl<T> implements SelectQuery<T> {
     public void where(final Predicate<T> restriction) {
         wherePlaceholder = WHERE_KEY_WORD;
         this.restriction = Objects.requireNonNull(restriction);
-    }
-
-
-    @Override
-    public Set<?> getParameters() {
-        return restriction == null
-                ? new HashSet<>()
-                : restriction.getParameters();
     }
 
 

@@ -1,8 +1,9 @@
 package daolayer.query.impl.predicate;
 
+import daolayer.query.LeafPredicate;
 import daolayer.query.Predicate;
 
-public abstract class AbstractPredicate<T> implements Predicate<T> {
+public abstract class AbstractPredicate<T> implements LeafPredicate<T> {
 
 
     @Override

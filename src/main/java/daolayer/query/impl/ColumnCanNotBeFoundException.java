@@ -1,4 +1,4 @@
-package daolayer.query.impl.predicate;
+package daolayer.query.impl;
 
 public class ColumnCanNotBeFoundException extends RuntimeException {
 

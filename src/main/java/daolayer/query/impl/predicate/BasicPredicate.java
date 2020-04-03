@@ -2,10 +2,7 @@ package daolayer.query.impl.predicate;
 
 import util.StringWrapper;
 
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 public class BasicPredicate<T> extends AbstractPredicate<T> {
 
@@ -22,10 +19,18 @@ public class BasicPredicate<T> extends AbstractPredicate<T> {
     }
 
 
-    @Override
-    public Set<PredicateParam> getParameters() {
-        return new HashSet<>(Collections.singletonList(
-                new PredicateParam(leftSide, operator, rightSide)));
+    public String getLeftSide() {
+        return leftSide;
+    }
+
+
+    public String getRightSide() {
+        return rightSide;
+    }
+
+
+    public ComparisonOperator getOperator() {
+        return operator;
     }
 
 

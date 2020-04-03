@@ -15,40 +15,6 @@ public class WhereBuilderTest {
         new WhereBuilder<>(null);
     }
 
-    @Test
-    public void shouldCreateOneParamPredicate() {
-        Predicate<TestEntity> result = new WhereBuilder<>(TestEntity.class)
-                .equals("intTestField", "5")
-                .build();
-
-        Assert.assertEquals(1, result.getParameters().size());
-    }
-
-    @Test
-    public void shouldCreateTwoParamPredicate() {
-        Predicate<TestEntity> result
-                = new WhereBuilder<>(TestEntity.class)
-                .equals("stringTestField", "TEST_VALUE")
-                .and()
-                .like("intTestField", "%55")
-                .build();
-
-        Assert.assertEquals(2, result.getParameters().size());
-    }
-
-    @Test
-    public void shouldCreateThreeParamPredicate() {
-        Predicate<TestEntity> result
-                = new WhereBuilder<>(TestEntity.class)
-                .equals("intTestField", "TEST_VALUE")
-                .and()
-                .like("intTestField", "SECOND_TEST_VALUE")
-                .or()
-                .equals("stringTestField", "THIRD_TEST_VALUE")
-                .build();
-
-        Assert.assertEquals(3, result.getParameters().size());
-    }
 
     @SuppressWarnings("all")
     @Test(expected = RuntimeException.class)

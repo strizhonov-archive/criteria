@@ -1,5 +1,6 @@
 package daolayer.query.impl.predicate;
 
+import daolayer.query.BinaryPredicate;
 import daolayer.query.Predicate;
 import daolayer.query.impl.TestEntity;
 import org.junit.Assert;
@@ -30,22 +31,14 @@ public class BasicPredicateTest {
 
 
     @Test
-    public void shouldGetSingleParameter() {
-        BasicPredicate<TestEntity> itemToTest
-                = new BasicPredicate<>("stringTestField", "TEST_VALUE", ComparisonOperator.LIKE);
-
-        Assert.assertEquals(1, itemToTest.getParameters().size());
-    }
-
-
-    @Test
     public void shouldBuildUpOrPredicate() {
         Predicate<TestEntity> initial
                 = new BasicPredicate<>("stringTestField", "predicate", ComparisonOperator.EQUALS);
         Predicate<TestEntity> result = initial
                 .or(new BasicPredicate<>("int_field", "predicate", ComparisonOperator.LIKE));
 
-        Assert.assertEquals(2, result.getParameters().size());
+
+        Assert.assertEquals(BooleanOperator.OR, ((BinaryPredicate<TestEntity>) result).getOperator());
     }
 
 
@@ -56,7 +49,7 @@ public class BasicPredicateTest {
         Predicate<TestEntity> result = initial
                 .and(new BasicPredicate<>("int_field", "predicate", ComparisonOperator.LIKE));
 
-        Assert.assertEquals(2, result.getParameters().size());
+        Assert.assertEquals(BooleanOperator.AND, ((BinaryPredicate<TestEntity>) result).getOperator());
     }
 
 }

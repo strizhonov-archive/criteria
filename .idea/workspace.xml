@@ -2,39 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="045dce06-d9f5-428e-a58c-bf0209bc1719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/model/Resume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/Predicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/SelectQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/SelectQueryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/AbstractPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/AbstractPredicate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/BasicPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/BasicPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/BinaryPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/CompositePredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/PredicateParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/PredicateParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/ColumnCanNotBeFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/ColumnCanNotBeFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/CompositePredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/CompositePredicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/PredicateParam.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/WhereBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daolayer/query/impl/predicate/WhereBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/StringWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/StringWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/SelectQueryBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/SelectQueryBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/SelectQueryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/SelectQueryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/BasicPredicateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/BasicPredicateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/CompositePredicateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/CompositePredicateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/WhereBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/WhereBuilderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/criteria.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Column.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Resume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/model/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/Predicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/SelectQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/SelectQueryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/AbstractPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/BasicPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/BinaryPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/BooleanOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/ComparisonOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/PredicateParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/WhereBuilder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daolayer/query/impl/predicate/WhereBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/StringWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/integration/IntegrationTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,12 +140,27 @@
       <recent name="daolayer.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WhereBuilderTest.shouldThrowUncheckedExceptionFromLike">
-    <configuration name="WhereBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BasicPredicateTest">
+    <configuration name="BasicPredicateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="daolayer.query.impl.predicate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="daolayer.query.impl.predicate" />
+      <option name="MAIN_CLASS_NAME" value="daolayer.query.impl.predicate.BasicPredicateTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhereBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="criteria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daolayer.query.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,27 +171,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhereBuilderTest.shouldCreateOneParamPredicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="criteria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="daolayer.query.impl.predicate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="daolayer.query.impl.predicate" />
-      <option name="MAIN_CLASS_NAME" value="daolayer.query.impl.predicate.WhereBuilderTest" />
-      <option name="METHOD_NAME" value="shouldCreateOneParamPredicate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WhereBuilderTest.shouldCreateThreeParamPredicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daolayer.query.impl.predicate.*" />
+          <option name="PATTERN" value="daolayer.query.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,7 +191,7 @@
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daolayer.query.impl.predicate.*" />
+          <option name="PATTERN" value="daolayer.query.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,7 +207,7 @@
       <module name="criteria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daolayer.query.impl.predicate.*" />
+          <option name="PATTERN" value="daolayer.query.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -238,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasicPredicateTest" />
         <item itemvalue="JUnit.WhereBuilderTest.shouldThrowUncheckedExceptionFromLike" />
         <item itemvalue="JUnit.WhereBuilderTest.shouldThrowCheckedException" />
         <item itemvalue="JUnit.WhereBuilderTest.shouldCreateThreeParamPredicate" />
         <item itemvalue="JUnit.WhereBuilderTest" />
-        <item itemvalue="JUnit.WhereBuilderTest.shouldCreateOneParamPredicate" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +256,7 @@
       <workItem from="1585939863528" duration="188000" />
       <workItem from="1585940074853" duration="306000" />
       <workItem from="1585940533613" duration="859000" />
-      <workItem from="1585941433126" duration="1867000" />
+      <workItem from="1585941433126" duration="5056000" />
     </task>
     <servers />
   </component>
@@ -293,18 +276,18 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1585839240764" />
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585941478106">
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1585945580140">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585941478106" />
+    <state x="524" y="115" width="544" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1585945580140" />
     <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585833546100">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="328" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/67.27.1299.741@67.27.1299.741" timestamp="1585833546100" />
-    <state x="461" y="257" width="510" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585931563512">
+    <state x="461" y="257" width="570" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585943742966">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="461" y="257" width="510" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1299.741@67.27.1299.741" timestamp="1585931563512" />
+    <state x="461" y="257" width="570" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1299.741@67.27.1299.741" timestamp="1585943742966" />
     <state x="469" y="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585833535697">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -375,7 +358,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/daolayer/query/impl/predicate/WhereBuilderTest.java</url>
-          <line>19</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

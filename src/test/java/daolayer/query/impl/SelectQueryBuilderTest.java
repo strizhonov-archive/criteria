@@ -21,22 +21,6 @@ public class SelectQueryBuilderTest {
     }
 
 
-    @Test
-    public void shouldSetSpecifiedPredicate() {
-        Predicate<TestEntity> firstChild
-                = new BasicPredicate<>("int_field", "TEST_VALUE", ComparisonOperator.EQUALS);
-        Predicate<TestEntity> secondChild
-                = new BasicPredicate<>("stringTestField", "TEST_VALUE", ComparisonOperator.LIKE);
-        Predicate<TestEntity> result
-                = new CompositePredicate<>(BooleanOperator.AND, firstChild, secondChild);
-
-        SelectQueryBuilder<TestEntity> itemToTest = new SelectQueryBuilder<>(TestEntity.class);
-        SelectQuery<TestEntity> builtQuery = itemToTest.where(result).build();
-
-        Assert.assertEquals(2, builtQuery.getParameters().size());
-    }
-
-
     @Test(expected = NullPointerException.class)
     public void shouldThrowNullPointerAfterSettingNullPredicate() {
         SelectQueryBuilder<TestEntity> itemToTest = new SelectQueryBuilder<>(TestEntity.class);

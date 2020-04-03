@@ -1,14 +1,12 @@
 package daolayer.query.impl.predicate;
 
+import daolayer.query.BinaryPredicate;
 import daolayer.query.Predicate;
 import util.StringWrapper;
 
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
-public class CompositePredicate<T> extends AbstractPredicate<T> {
+public class CompositePredicate<T> extends AbstractPredicate<T> implements BinaryPredicate<T> {
 
     private final Predicate<T> leftRestriction;
     private final BooleanOperator operator;
@@ -22,13 +20,21 @@ public class CompositePredicate<T> extends AbstractPredicate<T> {
     }
 
 
-    @SuppressWarnings(value = "unchecked")
     @Override
-    public Set<PredicateParam> getParameters() {
-        Set<PredicateParam> params = new HashSet<>();
-        params.addAll((Collection<PredicateParam>) leftRestriction.getParameters());
-        params.addAll((Collection<PredicateParam>) rightRestriction.getParameters());
-        return params;
+    public Predicate<T> getLeftHandSide() {
+        return leftRestriction;
+    }
+
+
+    @Override
+    public Predicate<T> getRightHandSide() {
+        return rightRestriction;
+    }
+
+
+    @Override
+    public BooleanOperator getOperator() {
+        return operator;
     }
 
 
