@@ -1,10 +1,10 @@
 package integration;
 
-import daolayer.model.Column;
-import daolayer.model.Resume;
-import daolayer.query.Predicate;
-import daolayer.query.impl.SelectQueryBuilder;
-import daolayer.query.impl.predicate.WhereBuilder;
+import by.strizhonov.app.daolayer.model.Column;
+import by.strizhonov.app.daolayer.model.Resume;
+import by.strizhonov.app.daolayer.query.Predicate;
+import by.strizhonov.app.daolayer.query.impl.SelectQueryBuilder;
+import by.strizhonov.app.daolayer.query.impl.predicate.WhereBuilder;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
