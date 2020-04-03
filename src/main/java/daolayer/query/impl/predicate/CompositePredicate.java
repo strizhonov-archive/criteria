@@ -8,14 +8,14 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class BinaryPredicate<T> extends AbstractPredicate<T> {
+public class CompositePredicate<T> extends AbstractPredicate<T> {
 
     private final Predicate<T> leftRestriction;
     private final BooleanOperator operator;
     private final Predicate<T> rightRestriction;
 
 
-    public BinaryPredicate(final BooleanOperator operator, final Predicate<T> left, final Predicate<T> right) {
+    public CompositePredicate(final BooleanOperator operator, final Predicate<T> left, final Predicate<T> right) {
         this.operator = Objects.requireNonNull(operator);
         this.leftRestriction = Objects.requireNonNull(left);
         this.rightRestriction = Objects.requireNonNull(right);

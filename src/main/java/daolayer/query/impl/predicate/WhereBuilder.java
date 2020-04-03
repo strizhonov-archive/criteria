@@ -6,6 +6,7 @@ import daolayer.query.Predicate;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class WhereBuilder<T> {
 
@@ -15,10 +16,10 @@ public class WhereBuilder<T> {
 
     /**
      * Mapped field names and database column values
-     * Keys - class field names
-     * Values - field <code>@Column name()</code> values
      * <p>
-     * If field is not annotated with @Column - it skipped
+     * Keys - class field names
+     * Values - database column names. Retrieved from <code>@Column</code> name annotation if present.
+     * Class field name stored if there is no annotation
      *
      * @see daolayer.model.Column
      */
@@ -26,32 +27,18 @@ public class WhereBuilder<T> {
 
 
     public WhereBuilder(final Class<T> classType) {
-        this.classType = classType;
+        this.classType = Objects.requireNonNull(classType);
         inflateFieldsMeta();
     }
 
 
     public WhereBuilder<T> equals(final String field, final String value) {
-        BasicPredicate<T> createdRestriction
-                = new BasicPredicate<T>(fieldsMetaData.get(field), value, ComparisonOperator.EQUALS);
-
-        currentRestriction = currentRestriction == null
-                ? createdRestriction
-                : compositePredicate(createdRestriction);
-
-        return this;
+        return addBasicPredicate(field, value, ComparisonOperator.EQUALS);
     }
 
 
     public WhereBuilder<T> like(final String field, final String value) {
-        BasicPredicate<T> createdRestriction
-                = new BasicPredicate<T>(fieldsMetaData.get(field), value, ComparisonOperator.LIKE);
-
-        currentRestriction = currentRestriction == null
-                ? createdRestriction
-                : compositePredicate(createdRestriction);
-
-        return this;
+        return addBasicPredicate(field, value, ComparisonOperator.LIKE);
     }
 
 
@@ -82,9 +69,33 @@ public class WhereBuilder<T> {
 
     private void storeFieldData(final Field fieldToStore) {
         Column currentAnnotation = fieldToStore.getAnnotation(Column.class);
-        if (currentAnnotation != null) {
+        if (currentAnnotation == null) {
+            fieldsMetaData.put(fieldToStore.getName(), fieldToStore.getName());
+        } else {
             fieldsMetaData.put(fieldToStore.getName(), currentAnnotation.name());
         }
+    }
+
+
+    private WhereBuilder<T> addBasicPredicate(final String field,
+                                              final String value,
+                                              final ComparisonOperator operator) {
+
+        String columnName = fieldsMetaData.get(field);
+
+        if (columnName == null) {
+            throw new ColumnCanNotBeFoundException(
+                    String.format("There's no table column found with field [%s] definition.", field));
+        }
+
+        BasicPredicate<T> createdRestriction
+                = new BasicPredicate<>(columnName, value, operator);
+
+        currentRestriction = currentRestriction == null
+                ? createdRestriction
+                : compositePredicate(createdRestriction);
+
+        return this;
     }
 
 

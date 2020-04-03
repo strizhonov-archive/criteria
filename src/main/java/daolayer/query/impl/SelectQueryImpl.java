@@ -4,6 +4,7 @@ import daolayer.model.Table;
 import daolayer.query.Predicate;
 import daolayer.query.SelectQuery;
 
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -34,7 +35,9 @@ public class SelectQueryImpl<T> implements SelectQuery<T> {
 
     @Override
     public Set<?> getParameters() {
-        return restriction.getParameters();
+        return restriction == null
+                ? new HashSet<>()
+                : restriction.getParameters();
     }
 
 

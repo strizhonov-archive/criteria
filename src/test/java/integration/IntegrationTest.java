@@ -5,15 +5,31 @@ import daolayer.model.Resume;
 import daolayer.query.Predicate;
 import daolayer.query.impl.SelectQueryBuilder;
 import daolayer.query.impl.predicate.WhereBuilder;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.junit.runners.MethodSorters;
 
 import java.lang.reflect.Field;
-import java.sql.*;
+import java.sql.Connection;
 import java.sql.Date;
-import java.util.*;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.ResourceBundle;
 
 @RunWith(JUnit4.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -47,14 +63,16 @@ public class IntegrationTest {
         String sql = createATestQuery();
         List<Resume> foundResumes = getResumesFromQuery(sql);
 
-        Resume expected = new Resume(3,
-                "Мария",
-                "Морская",
-                "Васильевна",
-                new GregorianCalendar(1999, Calendar.JULY, 11).getTime(),
-                "female",
-                new HashSet<>(),
-                new HashSet<>());
+        Resume expected = new Resume.ResumeBuilder()
+                .id(3)
+                .name("Мария")
+                .surname("Морская")
+                .secondName("Васильевна")
+                .birthday(new GregorianCalendar(1999, Calendar.JULY, 11).getTime())
+                .gender("female")
+                .contacts(new HashSet<>())
+                .technologies(new HashSet<>())
+                .build();
 
         Assert.assertTrue(foundResumes.contains(expected));
 
@@ -66,36 +84,42 @@ public class IntegrationTest {
         String sql = createBTestQuery();
         List<Resume> foundResumes = getResumesFromQuery(sql);
 
-        Resume expected = new Resume(1,
-                "Петр",
-                "Петров",
-                "Петрович",
-                new GregorianCalendar(1986, Calendar.DECEMBER, 12).getTime(),
-                "male",
-                new HashSet<>(),
-                new HashSet<>());
+        Resume expected = new Resume.ResumeBuilder()
+                .id(1)
+                .name("Петр")
+                .surname("Петров")
+                .secondName("Петрович")
+                .birthday(new GregorianCalendar(1986, Calendar.DECEMBER, 12).getTime())
+                .gender("male")
+                .technologies(new HashSet<>())
+                .contacts(new HashSet<>())
+                .build();
 
         Assert.assertTrue(foundResumes.contains(expected));
 
-        expected = new Resume(2,
-                "Иван",
-                "Иванов",
-                "Иванович",
-                new GregorianCalendar(1997, Calendar.APRIL, 4).getTime(),
-                "male",
-                new HashSet<>(),
-                new HashSet<>());
+        expected = new Resume.ResumeBuilder()
+                .id(2)
+                .name("Иван")
+                .surname("Иванов")
+                .secondName("Иванович")
+                .birthday(new GregorianCalendar(1997, Calendar.APRIL, 4).getTime())
+                .gender("male")
+                .technologies(new HashSet<>())
+                .contacts(new HashSet<>())
+                .build();
 
         Assert.assertTrue(foundResumes.contains(expected));
 
-        expected = new Resume(3,
-                "Мария",
-                "Морская",
-                "Васильевна",
-                new GregorianCalendar(1999, Calendar.JULY, 11).getTime(),
-                "female",
-                new HashSet<>(),
-                new HashSet<>());
+        expected = new Resume.ResumeBuilder()
+                .id(3)
+                .name("Мария")
+                .surname("Морская")
+                .secondName("Васильевна")
+                .birthday(new GregorianCalendar(1999, Calendar.JULY, 11).getTime())
+                .gender("female")
+                .contacts(new HashSet<>())
+                .technologies(new HashSet<>())
+                .build();
 
         Assert.assertTrue(foundResumes.contains(expected));
     }
@@ -142,6 +166,7 @@ public class IntegrationTest {
 
 
     private Predicate<Resume> createFirstTestPredicate(final WhereBuilder<Resume> whereBuilder) {
+
         return whereBuilder
                 .equals("name", "Мария")
                 .and()
@@ -153,11 +178,13 @@ public class IntegrationTest {
 
 
     private Predicate<Resume> createSecondTestPredicate(final WhereBuilder<Resume> whereBuilder) {
+
         return whereBuilder
                 .like("surname", "%ов")
                 .or()
                 .equals("gender", "female")
                 .build();
+
     }
 
 
@@ -182,22 +209,28 @@ public class IntegrationTest {
 
 
     private Resume compile(final ResultSet rs) throws SQLException {
-        long id = rs.getLong(RESUME_FIELDS_JAVA_SQL.get("id"));
-        String name = rs.getString(RESUME_FIELDS_JAVA_SQL.get("name"));
-        String surname = rs.getString(RESUME_FIELDS_JAVA_SQL.get("surname"));
-        String secondName = rs.getString(RESUME_FIELDS_JAVA_SQL.get("secondName"));
-        Date birthday = rs.getDate(RESUME_FIELDS_JAVA_SQL.get("birthday"));
-        String gender = rs.getString(RESUME_FIELDS_JAVA_SQL.get("gender"));
-
-        return new Resume(id, name, surname, secondName, birthday, gender, new HashSet<>(), new HashSet<>());
+        return new Resume.ResumeBuilder()
+                .id(rs.getLong(RESUME_FIELDS_JAVA_SQL.get("id")))
+                .name(rs.getString(RESUME_FIELDS_JAVA_SQL.get("name")))
+                .surname(rs.getString(RESUME_FIELDS_JAVA_SQL.get("surname")))
+                .secondName(rs.getString(RESUME_FIELDS_JAVA_SQL.get("secondName")))
+                .birthday(rs.getDate(RESUME_FIELDS_JAVA_SQL.get("birthday")))
+                .gender(rs.getString(RESUME_FIELDS_JAVA_SQL.get("gender")))
+                .technologies(new HashSet<>())
+                .contacts(new HashSet<>())
+                .build();
     }
 
 
     private static void storeFieldData(final Field fieldToStore) {
         Column currentAnnotation = fieldToStore.getAnnotation(Column.class);
-        if (currentAnnotation != null) {
-            RESUME_FIELDS_JAVA_SQL.put(fieldToStore.getName(), currentAnnotation.name());
-        }
+        RESUME_FIELDS_JAVA_SQL.put(
+                fieldToStore.getName(),
+                currentAnnotation == null
+                        ? fieldToStore.getName()
+                        : currentAnnotation.name()
+        );
+
     }
 
 

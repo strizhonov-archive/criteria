@@ -9,15 +9,18 @@ public class PredicateParam implements Serializable {
     private ComparisonOperator operator;
     private String value;
 
+
     public PredicateParam() {
         // Empty bean constructor
     }
+
 
     public PredicateParam(final String param, final ComparisonOperator operator, final String value) {
         this.param = param;
         this.operator = operator;
         this.value = value;
     }
+
 
     public String getParam() {
         return param;
@@ -43,6 +46,7 @@ public class PredicateParam implements Serializable {
         this.value = value;
     }
 
+
     @Override
     public boolean equals(final Object o) {
         if (this == o) return true;
@@ -53,10 +57,12 @@ public class PredicateParam implements Serializable {
                 Objects.equals(value, that.value);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(param, operator, value);
     }
+
 
     @Override
     public String toString() {

@@ -36,5 +36,4 @@ public class BasicPredicate<T> extends AbstractPredicate<T> {
                 StringWrapper.wrapWithSingleQuotation(rightSide);
     }
 
-
 }

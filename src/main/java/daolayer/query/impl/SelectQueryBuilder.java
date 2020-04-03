@@ -4,6 +4,8 @@ import daolayer.query.Predicate;
 import daolayer.query.SelectQuery;
 import daolayer.query.impl.predicate.WhereBuilder;
 
+import java.util.Objects;
+
 public class SelectQueryBuilder<T> {
 
 
@@ -12,7 +14,7 @@ public class SelectQueryBuilder<T> {
 
 
     public SelectQueryBuilder(final Class<T> classType) {
-        this.classType = classType;
+        this.classType = Objects.requireNonNull(classType);
         this.resultQuery = new SelectQueryImpl<>(classType);
     }
 

@@ -37,18 +37,6 @@ public class Resume implements Serializable {
         // Empty bean constructor
     }
 
-    public Resume(final long id, final String name, final String surname, final String secondName,
-                  final Date birthday, final String gender, final Set<Contact> contacts, final Set<String> technologies) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.secondName = secondName;
-        this.birthday = birthday;
-        this.gender = gender;
-        this.contacts = contacts;
-        this.technologies = technologies;
-    }
-
     public long getId() {
         return id;
     }
@@ -82,11 +70,19 @@ public class Resume implements Serializable {
     }
 
     public Date getBirthday() {
-        return birthday;
+        if (this.birthday == null) {
+            return null;
+        } else {
+            return new Date(birthday.getTime());
+        }
     }
 
     public void setBirthday(final Date birthday) {
-        this.birthday = birthday;
+        if (birthday == null) {
+            this.birthday = null;
+        } else {
+            this.birthday = new Date(birthday.getTime());
+        }
     }
 
     public String getGender() {
@@ -147,4 +143,79 @@ public class Resume implements Serializable {
                 '}';
     }
 
+
+    public static final class ResumeBuilder {
+
+        private long id;
+        private String name;
+        private String surname;
+        private String secondName;
+        private Date birthday;
+        private String gender;
+        private Set<Contact> contacts = new HashSet<>();
+        private Set<String> technologies = new HashSet<>();
+
+
+        public ResumeBuilder() {
+            // Empty builder constructor
+        }
+
+
+        public ResumeBuilder id(final long id) {
+            this.id = id;
+            return this;
+        }
+
+        public ResumeBuilder name(final String name) {
+            this.name = name;
+            return this;
+        }
+
+        public ResumeBuilder surname(final String surname) {
+            this.surname = surname;
+            return this;
+        }
+
+        public ResumeBuilder secondName(final String secondName) {
+            this.secondName = secondName;
+            return this;
+        }
+
+        public ResumeBuilder birthday(final Date birthday) {
+            if (birthday == null) {
+                this.birthday = null;
+            } else {
+                this.birthday = new Date(birthday.getTime());
+            }
+            return this;
+        }
+
+        public ResumeBuilder gender(final String gender) {
+            this.gender = gender;
+            return this;
+        }
+
+        public ResumeBuilder contacts(final Set<Contact> contacts) {
+            this.contacts = contacts;
+            return this;
+        }
+
+        public ResumeBuilder technologies(final Set<String> technologies) {
+            this.technologies = technologies;
+            return this;
+        }
+
+        public Resume build() {
+            Resume resume = new Resume();
+            resume.setId(id);
+            resume.setName(name);
+            resume.setSurname(surname);
+            resume.setSecondName(secondName);
+            resume.setBirthday(birthday);
+            resume.setGender(gender);
+            resume.setContacts(contacts);
+            resume.setTechnologies(technologies);
+            return resume;
+        }
+    }
 }
